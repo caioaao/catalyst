@@ -690,13 +690,13 @@ class Exchange:
                     balances=balances,
                     amount=cash,
                 )
-                if is_lower:
-                    raise NotEnoughCashError(
-                        currency=self.base_currency,
-                        exchange=self.name,
-                        free=free_cash,
-                        cash=cash,
-                    )
+                # if is_lower:
+                #     raise NotEnoughCashError(
+                #         currency=self.base_currency,
+                #         exchange=self.name,
+                #         free=free_cash,
+                #         cash=cash,
+                #     )
 
         positions_value = 0.0
         if positions is not None:
